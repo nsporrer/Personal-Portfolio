@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Nathan Sporrer</title>
+    <link rel="stylesheet" href="css/stylesheet.css">
+    <link rel="stylesheet" href="https://use.typekit.net/nka4uaa.css">
+</head>
+
+<body>
+    <div class="linkBox">
+        <div id="a" class="link"><a href="index.html">HOME</a></div>
+        <div id="b" class="link activeLink"><a href="gallery.html">GALLERY</a></div>
+        <div id="c" class="link"><a href="contact.html">CONTACT</a></div>
+    </div>
+    <img src="img/logo.png" alt="NS logo where the N casts a shadow to make the S" class="logo">
+    <div class="whiteBox"></div>
+    <div class="sections">
+        <a href="gallery.html">TOP |</a>
+        <a href="#A">PR1 |</a>
+        <a href="#B">PR2 |</a>
+        <a href="#C">PR3 |</a>
+        <a href="#D">PR4 |</a>
+        <a href="#E">PR5 |</a>
+        <a href="#F">PR6</a>
+    </div>
+    <div class="gallery">
+        <section class="white" id="A">
+            <img src="img/nz.png" alt="New Zealand project that shows spreads cover and printed book">
+            <div class="gallGrid">
+                <div class="titles">
+                    <h2>NEW ZEALAND INFO BOOK</h2>
+                    <h3>ISU art 326—fall 2023<br>adobe indesign / adobe illustrator<br>7.5"x7.5"</h3>
+                </div>
+                <div class="paragraphs">
+                    <p>This project focused on creating an information booklet for a country of my choice. The focus was
+                        on creating consistent and nice looking icons and graphs to illustrate a lot of information
+                        about the country. I chose to base my design on the Māori flag, which is the flag that
+                        represents the indigenous people of the region.</p>
+                </div>
+            </div>
+        </section>
+        <section class="gray" id="B">
+            <img src="img/lego.png" alt="Lego poster project that shows full poster and some zoomed in areas">
+            <div class="gallGrid">
+                <div class="titles">
+                    <h2>LEGO PRODUCTION POSTER</h2>
+                    <h3>ISU art 326—fall 2023<br>adobe illustrator<br>18"x24"</h3>
+                </div>
+                <div class="paragraphs">
+                    <p>This project emphasized the idea of providing information without using any words. I selected
+                        LEGO as
+                        my
+                        topic because it has an interesting creation process, and it allowed practice for designing
+                        within a
+                        brand's pre-determined style.</p>
+                </div>
+            </div>
+
+        </section>
+        <section class="white" id="C">
+            <img src="img/portfolio.png"
+                alt="Portfolio invitation project that shows the layout and a mockup printed version">
+            <div class="gallGrid">
+                <div class="titles">
+                    <h2>PORTFOLIO SHOW INVITATION</h2>
+                    <h3>ICC grdsn 240—spring 2023<br>adobe illustrator / adobe indesign<br>5"x7"</h3>
+                </div>
+                <div class="paragraphs">
+                    <p>This project involved the creation of an invitation to our school's portfolio show. The design
+                        was based
+                        on the word “Inspiration”. The cover is a photo with sketches that inspire me behind a computer
+                        that is
+                        in the process of designing. The back of the card contains the where, when, and who of the event
+                        with
+                        elements from the cover.</p>
+                </div>
+            </div>
+        </section>
+        <section class="gray" id="D">
+            <img src="img/urban.png" alt="Seed packaging project UrbanO2 that shows the diecuts and real life versions">
+            <div class="gallGrid">
+                <div class="titles">
+                    <h2>URBAN O2 SEED PACKAGING</h2>
+                    <h3>ICC grdsn 150—fall 2022<br>adobe illustrator</h3>
+                </div>
+                <div class="paragraphs">
+                    <p>This project included packaging design based around the company Burpee and their need for a new
+                        seed
+                        product focused on sustainability. I landed on the idea of high oxygen producing plants that are
+                        easy to
+                        grow for CO2 conscious people living in cities.</p>
+                </div>
+            </div>
+        </section>
+        <section class="white" id="E">
+            <img src="img/icc.png" alt="Branding project where I redesigned all the elements of a disc golf course">
+            <div class="gallGrid">
+                <div class="titles">
+                    <h2>ICC DISC GOLF BRANDING</h2>
+                    <h3>ICC grdsn 240—spring 2023<br>adobe illustrator</h3>
+                </div>
+                <div class="paragraphs">
+                    <p>This project focused on the rebranding of the Illinois Central College disc golf course, and all
+                        of its
+                        elements. Including the logo, the baskets, parking signs, the hole maps, and the overall map of
+                        the
+                        course.</p>
+                </div>
+            </div>
+        </section>
+        <section class="gray" id="F">
+            <img src="img/futura.png"
+                alt="Brochure project to show a font and its characteristics, showing spreads and printed version">
+            <div class="gallGrid">
+                <div class="titles">
+                    <h2>FUTURA FONT BROCHURE</h2>
+                    <h3>ICC grdsn 150—fall 2022<br>adobe illustrator<br>5.33x8” tri-fold</h3>
+                </div>
+                <div class="paragraphs">
+                    <p>This project consisted of research on a font, its designer, and the era's style in which it was
+                        created.
+                        The brochure created is focused on the Futura typeface, and incorporated design inspiration from
+                        the
+                        Bauhaus movement and the International Typo- graphic Style, which were both prominent movements
+                        during
+                        the creation of Futura.</p>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <footer>
+        <div class="f1"></div>
+        <div class="f2"></div>
+        <div class="f3"></div>
+        <div class="f4"> <h4>Copyright 2023 Nathan Sporrer</h4></div>
+    </footer>
+
+    <script>
+        function checkPage()
+        {
+            var previousPage = sessionStorage.getItem('currentPage');
+            if(previousPage && previousPage.includes("cont")) {
+                var c = document.getElementById("c");
+                c.classList.add("anim2");
+            }
+            if(previousPage && previousPage.includes("index")) {
+                var a = document.getElementById("a");
+                a.classList.add("anim2");
+            }
+            sessionStorage.setItem('currentPage', 'gallery.html');
+            }
+
+        checkPage();
+    </script>
+</body>
+
+</html>
